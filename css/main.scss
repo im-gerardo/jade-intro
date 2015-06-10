@@ -1,110 +1,110 @@
-$mainColor: #02CA00;
-$margin: 20px;
+// $mainColor: #02CA00;
+// $margin: 20px;
 
 
-p{
-	background: $mainColor;
-	// Operaciones matematicas suma resta multi divis etc
-	margin: $margin * 2;
-	// operaciones matema con numeros fijos
-	margin: 100px * 2;
-	// las divisiones van dentro de parentesis
-	margin: (100px / 2);
-}
+// p{
+// 	background: $mainColor;
+// 	// Operaciones matematicas suma resta multi divis etc
+// 	margin: $margin * 2;
+// 	// operaciones matema con numeros fijos
+// 	margin: 100px * 2;
+// 	// las divisiones van dentro de parentesis
+// 	margin: (100px / 2);
+// }
 
-a {
-	color: $mainColor;
-}
-
-
-// Anidar codigo para
-// para cuando un elemento esta dentro de otro.
-
-p{
-	color: #fff;
-
-	span{
-		color: #000;
-	}
-}
+// a {
+// 	color: $mainColor;
+// }
 
 
+// // Anidar codigo para
+// // para cuando un elemento esta dentro de otro.
 
-.mensaje{
-	border: 1px solid red;
-	font-size: .8em;
+// p{
+// 	color: #fff;
 
-	&.error{
-		color: #fff;
-		background: red;
-	}
-	&.info{
-		background: blue;
-		color: #fff;
-	}
-}
+// 	span{
+// 		color: #000;
+// 	}
+// }
 
 
-// Media queries 
-@media all and (min-width:1200px) {
+
+// .mensaje{
+// 	border: 1px solid red;
+// 	font-size: .8em;
+
+// 	&.error{
+// 		color: #fff;
+// 		background: red;
+// 	}
+// 	&.info{
+// 		background: blue;
+// 		color: #fff;
+// 	}
+// }
+
+
+// // Media queries 
+// @media all and (min-width:1200px) {
 	
-}
+// }
 
 
 // anidar un media query
-div{
-	width: 100%;
+// div{
+// 	width: 100%;
 
 
-	@media screen and (min-width:1025px){
-		width: 75%;
-		margin: 0 auto;
-	}
-}
+// 	@media screen and (min-width:1025px){
+// 		width: 75%;
+// 		margin: 0 auto;
+// 	}
+// }
 
 
 // ejemplo fnciones de CSS con sass
-$color: #CC9B8E;
+// $color: #CC9B8E;
 
-div{
-	width: 30%;
-	float: left;
-	margin: 1.66%;
-	height: 150px;
-	background: $color;
-}
-.darken{
-	background: darken($color,20%);
-}
-.lighten{
-	background: lighten($color,20%);
-}
-.saturate{
-	background: saturate($color,30%);
-}
-.desaturate{
-	background: desaturate($color,30%);
-}
-.rgba{
-	background: rgba(red,.8);
-}
-.invert{
-	background: invert($color);
-}
-.complement{
-	background: complement($color);
-}
+// // div{
+// // 	width: 30%;
+// // 	float: left;
+// // 	margin: 1.66%;
+// // 	height: 150px;
+// // 	background: $color;
+// // }
+// .darken{
+// 	background: darken($color,20%);
+// }
+// .lighten{
+// 	background: lighten($color,20%);
+// }
+// .saturate{
+// 	background: saturate($color,30%);
+// }
+// .desaturate{
+// 	background: desaturate($color,30%);
+// }
+// .rgba{
+// 	background: rgba(red,.8);
+// }
+// .invert{
+// 	background: invert($color);
+// }
+// .complement{
+// 	background: complement($color);
+// }
 
 
 // Mixins
-@mixin borde($border-width, $border-color, $border-radius){
-	border: $border-width solid $border-color;
-	border-radius: $border-radius;
-}
+// @mixin borde($border-width, $border-color, $border-radius){
+// 	border: $border-width solid $border-color;
+// 	border-radius: $border-radius;
+// }
 
-div {
-	@include borde(10px, red, 50px);
-}
+// div {
+// 	@include borde(10px, red, 50px);
+// }
 
 
 // ciclo for en sass
@@ -133,22 +133,22 @@ div {
 
 
 // Maps o Arrays u Objetos
-$sizes: (
-					movil: 480px,
-					tablet: 768px,
-					web: 1025px,
-					hd: 1400
-				);
+// $sizes: (
+// 					movil: 480px,
+// 					tablet: 768px,
+// 					web: 1025px,
+// 					hd: 1400
+// 				);
 
-@each $size, $width-size in $sizes{
-	@media all and (min-width:#{$width-size}){
-		@for $i from 1 through 20{
-			.#{$size}-#{$i*5}{
-				width: $i*5%;
-			}
-		}
-	}
-}
+// @each $size, $width-size in $sizes{
+// 	@media all and (min-width:#{$width-size}){
+// 		@for $i from 1 through 20{
+// 			.#{$size}-#{$i*5}{
+// 				width: $i*5%;
+// 			}
+// 		}
+// 	}
+// }
 
 
 

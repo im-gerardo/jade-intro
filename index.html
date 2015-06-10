@@ -3,8 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introducción a Sass</title>
+    <title>Introducción a Sass & Git</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -15,5 +16,68 @@
     <div class="rgba"></div>
     <div class="invert"></div>
     <div class="complement"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 well text-center">div 1</div>
+        <div class="col-sm-4 well text-center">div 2</div>
+        <div class="col-sm-4 well text-center">div 3</div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>Contents...</p>
+        <p><a href="" class="btn btn-primary btn-lg">Learn more</a></p>
+      </div>
+    </div>
+    <script href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script href="js/main.js"></script>
+    <script>
+      var miNombre = "Pedro"; 
+      console.log(miNombre);
+      
+      //- FUNCIONES
+      function saluda(nombre){
+      	console.log('Ola k ase, ' + nombre + '?');
+      }
+      
+      saluda('Juan');
+      
+      //- ARRAYS ó ARREGLOS 
+      var ciudades = ['León', 'Silao', 'Guanajuato', 'Romita', 'Salvatierra'];
+      //- Accedemos a todos los elementos del arreglo
+      console.log(ciudades);
+      //- Acceder a un elemento del objeto con respecto a su indice 
+      console.log(ciudades[0]);
+      
+      //- OBJETOS
+      var cliente = {
+      	nombre: 'Juan',
+      	apellido: 'Gutierrez',
+      	edad: 50,
+      	direccion: 'Blvd. Francisco Villa, #1521',
+      	telefono: 4773456298
+      }
+      
+      console.log(cliente);
+      
+      console.log(cliente.apellido);
+      
+      //- LOOPS
+      var i = 0;
+      while(i<5){
+      	console.log('hice un ciclo ' + 1);
+      	i++;
+      }
+      
+      for(var i=0; i<5; i++){
+      	console.log('Estoy aprendiendo fors en javascript. linea ' + i);
+      }
+      
+      $(document).ready(function(){
+      	//- $('p').hide();
+      	console.log('algo');
+      });
+    </script>
   </body>
 </html>
